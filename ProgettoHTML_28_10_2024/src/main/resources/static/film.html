@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quentin Tarantino's Official Site</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<!--Title-->
+<!-- Container per centrare la card -->
+<div class="container my-5">
+    <!-- Card centrata -->
+    <div class="card mx-auto" style="max-width: 600px;">
+        <!-- Immagine -->
+        <img src="img/profilePic.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Quentin Tarantino" style="width: 150px; height: 150px;">
+        
+        <!-- Corpo della card -->
+        <div class="card-body text-center">
+            <h1 class="card-title"><i class="fas fa-film"></i> Quentin Tarantino <i class="fas fa-film"></i> </h1>
+            <h4 class="card-subtitle mb-2 text-muted">Regista, sceneggiatore, attore, produttore cinematografico e scrittore statunitense</h4>
+            <p class="card-text mt-3">
+                Quentin Tarantino è un regista, sceneggiatore, produttore e attore statunitense nato il 27 marzo 1963 a Knoxville, Tennessee. 
+                È noto per il suo stile unico che mescola dialoghi brillanti, violenza stilizzata e riferimenti alla cultura pop, rendendolo uno degli autori più influenti del cinema moderno.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+
+    <div class="container justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="film.html">Film</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html">Contattami</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- [SEMANTIC-TAG] "main" per il contenuto principale -->
+<main class="container">
+    <!-- Card introduttiva che descrive la pagina -->
+    <div class="card mt-4 ">
+        <div class="card-body">
+            <h5 class="card-title">Scopri tutta la filmografia del miglior regista di tutti i tempi!</h5>
+            <p class="card-text">Quentin Tarantino ha iniziato la sua carriera cinematografica nel 1992 con il cult movie 'Le Iene'. Da allora, ha continuato a rivoluzionare il panorama del cinema con opere iconiche come 'Pulp Fiction', 'Kill Bill' e 'C'era una volta a Hollywood', consolidando il suo status di maestro della narrazione e del dialogo.</p>
+        </div>
+    </div>
+
+    <!-- [SEMANTIC-TAG] "section" per racchiudere la tabella -->
+    <section class="mb-5 mt-3">
+        <!-- Tabella con Bootstrap -->
+        <table class="table table-striped table-bordered ">
+            <thead class="table-dark">
+            <tr style="vertical-align: middle;">
+                <th >Titolo</th>
+                <th>Anno</th>
+                <th>Scheda Film</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Le Iene</td>
+                <td><span class="badge bg-black">1992 </span></td>
+                <td><a href="https://www.imdb.com/title/tt0105236/">Le Iene - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Pulp Fiction</td>
+                <td><span class="badge bg-black">1994</span></td>
+                <td><a href="https://www.imdb.com/title/tt0110912/">Pulp Fiction - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Jackie Brown</td>
+                <td><span class="badge bg-black">1997</span></td>
+                <td><a href="https://www.imdb.com/title/tt0119396/">Jackie Brown - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Kill Bill: Volume 1</td>
+                <td><span class="badge bg-black">2003 </span></td>
+                <td><a href="https://www.imdb.com/title/tt0266697/">Kill Bill: Volume 1 - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Kill Bill: Volume 2</td>
+                <td><span class="badge bg-black">2004 </span></td>
+                <td><a href="https://www.imdb.com/title/tt0378194/">Kill Bill: Volume 2 - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Bastardi senza gloria</td>
+                <td><span class="badge bg-black">2009 </span></td>
+                <td><a href="https://www.imdb.com/title/tt0361748/">Bastardi senza gloria - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>Django Unchained</td>
+                <td><span class="badge bg-black"> 2012  </span></td>
+                <td><a href="https://www.imdb.com/title/tt1853728/">Django Unchained - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>The Hateful Eight</td>
+                <td><span class="badge bg-black">2015</span></td>
+                <td><a href="https://www.imdb.com/title/tt3460848/">The Hateful Eight - IMDb</a></td>
+            </tr>
+            <tr>
+                <td>C'era una volta a... Hollywood</td>
+                <td><span class="badge bg-black">2019</span></td>
+                <td><a href="https://www.imdb.com/title/tt7131622/">C'era una volta a... Hollywood - IMDb</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer class="bg-black text-center p-3 mt-4 text-white">
+    <a href="https://www.github.com/piervincenzo" class="text-white" > ©Piervincenzo Algieri - Web Application 2024-2025 - Unical</a>
+</footer>
+
+
+</body>
+</html>

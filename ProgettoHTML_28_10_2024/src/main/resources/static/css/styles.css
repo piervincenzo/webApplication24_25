@@ -1,0 +1,50 @@
+/* Modifica il colore e lo stile dei titoli */
+h2, h3, h1, h4 {
+    
+    color: #272d35; /* Colore blu brillante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ombra leggera */
+}
+
+article{
+    text-decoration-color: #bf0c49;
+    text-emphasis-color: 90%;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ombra leggera */
+    max-width: 800px; margin: auto;
+    
+}
+
+h1{
+    font-style: italic;
+}
+
+nav{
+    color: aqua;
+}
+
+/* Cambia lo stile della navbar */
+.nav-link {
+    color: #272d35; /* Cambia il colore dei link della navbar */
+    font-weight: bold; /* Rende il testo in grassetto */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4); /* Ombra leggera */
+    
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}
+
+/* Personalizza la tabella */
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-color: black !important;
+}
+
+body{
+    text-align: center;
+    background-color:burlywood;
+    
+}
+
+
