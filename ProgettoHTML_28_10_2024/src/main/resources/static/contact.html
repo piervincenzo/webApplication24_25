@@ -16,15 +16,10 @@
 </head>
 <body>
     
-<!--Title-->
-<!-- Container per centrare la card -->
 <div class="container my-5">
-    <!-- Card centrata -->
     <div class="card mx-auto" style="max-width: 600px;">
-        <!-- Immagine -->
         <img src="img/profilePic.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Quentin Tarantino" style="width: 150px; height: 150px;">
         
-        <!-- Corpo della card -->
         <div class="card-body text-center">
             <h1 class="card-title"><i class="fas fa-film"></i> Quentin Tarantino <i class="fas fa-film"></i> </h1>
             <h4 class="card-subtitle mb-2 text-muted">Regista, sceneggiatore, attore, produttore cinematografico e scrittore statunitense</h4>
@@ -35,7 +30,7 @@
         </div>
     </div>
 </div>
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container justify-content-center">
         <ul class="navbar-nav">
@@ -53,18 +48,17 @@
 </nav>
 
 <main>
-
     <h2 class="mt-4">Chiedi a Quentin</h2>
     <form id="formSubmit" method="GET" action="img/winner.png">
         <label for="formName">Nome:</label><br>
-        <input class="form-control" style="max-width: 300px; margin: auto; border-color: black;" type="text" id="formName" name="formName">
+        <input class="form-control" type="text" id="formName" name="formName">
        
         <label class="mt-2" for="formSurname">Cognome:</label>
-        <input class="form-control" style="max-width: 300px; margin: auto; border-color: black;" type="text" id="formSurname" name="formSurname">
+        <input class="form-control" type="text" id="formSurname" name="formSurname">
 
 
         <label class="mt-2" for="formEmail">La tua e-mail:</label>
-        <input class="form-control" style="max-width: 300px; margin: auto; border-color: black;" type="email" id="formEmail" name="formEmail">
+        <input class="form-control" type="email" id="formEmail" name="formEmail">
 
         <h5 class="mt-5">Per cosa mi scrivi?</h5>
        
@@ -84,13 +78,6 @@
             <input class=" btn btn-light btn-sm" type="submit" form="formSubmit"/>
         </div>
     </form>
-
-  
-
-    
-
-
-
 </main>
 
 

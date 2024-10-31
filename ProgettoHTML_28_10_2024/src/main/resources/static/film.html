@@ -11,17 +11,16 @@
     
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="js/addFilm.js" defer></script>
+    <script src="js/removeFilm.js" defer></script>
+
 </head>
 <body>
-<!--Title-->
-<!-- Container per centrare la card -->
+    
 <div class="container my-5">
-    <!-- Card centrata -->
     <div class="card mx-auto" style="max-width: 600px;">
-        <!-- Immagine -->
         <img src="img/profilePic.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Quentin Tarantino" style="width: 150px; height: 150px;">
         
-        <!-- Corpo della card -->
         <div class="card-body text-center">
             <h1 class="card-title"><i class="fas fa-film"></i> Quentin Tarantino <i class="fas fa-film"></i> </h1>
             <h4 class="card-subtitle mb-2 text-muted">Regista, sceneggiatore, attore, produttore cinematografico e scrittore statunitense</h4>
@@ -33,9 +32,7 @@
     </div>
 </div>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-
     <div class="container justify-content-center">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -51,9 +48,7 @@
     </div>
 </nav>
 
-<!-- [SEMANTIC-TAG] "main" per il contenuto principale -->
 <main class="container">
-    <!-- Card introduttiva che descrive la pagina -->
     <div class="card mt-4 ">
         <div class="card-body">
             <h5 class="card-title">Scopri tutta la filmografia del miglior regista di tutti i tempi!</h5>
@@ -61,10 +56,8 @@
         </div>
     </div>
 
-    <!-- [SEMANTIC-TAG] "section" per racchiudere la tabella -->
-    <section class="mb-5 mt-3">
-        <!-- Tabella con Bootstrap -->
-        <table class="table table-striped table-bordered ">
+    <section class="mb-5 mt-3" style="align-content: center;">
+        <table class="table table-striped table-bordered " id="filmTable">
             <thead class="table-dark">
             <tr style="vertical-align: middle;">
                 <th >Titolo</th>
@@ -120,8 +113,50 @@
             </tr>
             </tbody>
         </table>
+        <div class="text-end " >
+            <button id="addFilmButton" class="btn btn-outline-primary btn-sm ">
+                <i class="fas fa-plus"></i> Aggiungi un nuovo film
+            </button>
+    
+            <button id="removeFilmButton" class="btn btn-outline-danger btn-sm">
+                Rimuovi film
+            </button>
+    
+        </div>
+        
     </section>
+    
 </main>
+
+<div id="filmForm" style="display: none; margin-top: 20px;">
+    <h3>Aggiungi un nuovo Film</h3>
+    <form id="newFilmForm">
+        <div class="mb-3">
+            <label for="titolo" class="form-label">Titolo</label>
+            <input type="text" id="titolo" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="anno" class="form-label">Anno</label>
+            <input type="number" id="anno" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="schedaFilm" class="form-label">Scheda Film</label>
+            <input type="text" id="schedaFilm" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Aggiungi Film</button>
+    </form>
+</div>
+
+<div id="removeFilmForm" style="display: none; margin-top: 10px;">
+    <h3>Rimuovi un film</h3>
+    <form id="removeFilmByNumberForm" onsubmit="removeFilmByNumber(event)">
+        <label for="filmNumber">Numero del film:</label>
+        <input type="number" id="filmNumber" min="1" required>
+        <button type="submit" class="btn btn-danger btn-sm">Rimuovi</button>
+    </form>
+</div>
+
+        
 
 <footer class="bg-black text-center p-3 mt-4 text-white">
     <a href="https://www.github.com/piervincenzo" class="text-white" > ©Piervincenzo Algieri - Web Application 2024-2025 - Unical</a>

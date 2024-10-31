@@ -1,15 +1,14 @@
-/* Modifica il colore e lo stile dei titoli */
 h2, h3, h1, h4 {
     
-    color: #272d35; /* Colore blu brillante */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ombra leggera */
+    color: #272d35;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 article{
     text-decoration-color: #bf0c49;
     text-emphasis-color: 90%;
     font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ombra leggera */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
     max-width: 800px; margin: auto;
     
 }
@@ -22,19 +21,17 @@ nav{
     color: aqua;
 }
 
-/* Cambia lo stile della navbar */
 .nav-link {
-    color: #272d35; /* Cambia il colore dei link della navbar */
-    font-weight: bold; /* Rende il testo in grassetto */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4); /* Ombra leggera */
+    color: #272d35; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4); 
     
 }
 
 .nav-link:hover {
-    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+    text-decoration: underline; 
 }
 
-/* Personalizza la tabella */
 table {
     border: 3px solid black;
     border-collapse: collapse;
@@ -44,7 +41,10 @@ table {
 body{
     text-align: center;
     background-color:burlywood;
-    
+}
+
+input{
+    max-width: 300px; margin: auto; border-color: black; 
 }
 
 
