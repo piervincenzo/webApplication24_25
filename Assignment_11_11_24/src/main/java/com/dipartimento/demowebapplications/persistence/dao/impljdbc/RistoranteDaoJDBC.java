@@ -161,6 +161,17 @@ public class RistoranteDaoJDBC implements RistoranteDao {
 
     @Override
     public void delete(Ristorante ristorante) {
+        String query = "DELETE FROM ristorante " +
+                "WHERE nome = ? AND descrizione = ? AND ubicazione = ?";
+
+        try (PreparedStatement stmt = connection.prepareStatement(query)) {
+            stmt.setString(1, ristorante.getNome());
+            stmt.setString(2, ristorante.getDescrizione());
+            stmt.setString(3, ristorante.getUbicazione());
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 

@@ -85,6 +85,16 @@ ON CONFLICT (id) DO UPDATE SET txt = EXCLUDED.txt;
     @Override
     public void delete(Piatto piatto) {
 
+        String query = "DELETE FROM piatto " +
+                "WHERE nome = ? AND ingredienti = ?";
+
+        try (PreparedStatement stmt = connection.prepareStatement(query)) {
+            stmt.setString(1, piatto.getNome());
+            stmt.setString(2, piatto.getIngredienti());
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
